@@ -20,13 +20,10 @@ def count(str, range)
             special += 1
         end
     end
-        print "Upper case letters: #{upper} \n"
-        print "Lower case letters: #{down} \n"
-        print "Number: #{number} \n"
-        print "Special characters: #{special} \n"
+    "Upper case letters: #{upper} \n Lower case letters: #{down} \n Number: #{number} \n Special characters: #{special} \n"
 end
 
 string = "#GeeKs01fOr@gEEks07"
 str = string.chars
 range = str.length
-count(str, range)
+print count(str, range)

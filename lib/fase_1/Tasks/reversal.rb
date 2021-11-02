@@ -14,9 +14,7 @@ def rightRotate (array, d, n)
 end
 
 def prArray( array, size)
-    for i in 0...size
-        print "#{array[i]}  "
-    end
+    p array
 end
 
 # Driver code

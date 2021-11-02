@@ -6,29 +6,29 @@ def FindNumber(array, range)
         puts "invalid input"
      end
 
-         for i in 0...range
+    (0...range).each { |i|
 
-            x = array[i]
+      x = array[i]
 
-            if x > first
-                third = second
-                second = first
-                first = x    
+      if x > first
+        third = second
+        second = first
+        first = x
 
-            elsif x > second
-                third = second
-                second = x  
+      elsif x > second
+        third = second
+        second = x
 
-            elsif x > third
-                third = x            
-            end
-            
-         end
+      elsif x > third
+        third = x
+      end
 
-         print "Three largest elements are #{first}, #{second}, #{third}."
+    }
+
+         "Three largest elements are #{first}, #{second}, #{third}."
   
 end
 
 array = [12, 13, 1, 10, 34, 1]
 range = array.length
-FindNumber(array, range)
+print FindNumber(array, range)
